@@ -35,7 +35,7 @@
   xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
   <id>deployable</id>
   <formats>
-    <format>tar.gz</format>
+    <format>zip</format>
   </formats>
   <includeBaseDirectory>false</includeBaseDirectory>
   <fileSets>
@@ -65,6 +65,7 @@
 		<outputDirectory>${project.artifactId}-${project.version}</outputDirectory>
         <includes>
             <include>start.sh</include>
+			<include>start.bat</include>
             <!-- Include all for now until it's standardized? Standardizing now, so only include start.sh            
             <include>runSpring.sh</include>
 			<include>*</include>

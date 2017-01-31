@@ -53,6 +53,7 @@
 
 	<properties>
 		<license.plugin.version>1.9.0</license.plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<build>
@@ -104,6 +105,9 @@
                             <exclude>**/.git/**</exclude>
                             <exclude>**/*.log</exclude>
                             <exclude>**/*.txt</exclude>
+                            <exclude>**/*.versionsBackup</exclude>
+                            <exclude>**/*.md</exclude>
+                            <exclude>**/*.docx</exclude>
 
                             <!-- Project-specific excludes -->
                         </excludes>
